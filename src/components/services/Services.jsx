@@ -5,111 +5,105 @@ import { BsCheckLg } from 'react-icons/bs'
 const Services = () => {
     return (
         <section id='services'>
-            <h5>What I Know</h5>
-            <h2>Learning and Achievement</h2>
+            <h2><b>Skills</b></h2>
 
             <div className="container services__containter">
-                {/* start Mô tả chi tiết */}
+                
                 <article className="service">
                     <div className="service__head">
-                        <h3>Information Assurance Learning Path</h3>
+                        <h3><b>Penetration Testing</b></h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Computer Networking</p>
+                            <p>Web Application Penetration Testing</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Open Source Platform and Network Administration</p>
+                            <p>Network Penetration Testing</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Risk Management in Information Systems</p>
+                            <p>Wireless Penetration Testing</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Web Security</p>
+                            <p>Active Directory Penetration Testing</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Network Forensics</p>
-                        </li>
-                        <li>
-                            <BsCheckLg className='service__list-icon' />
-                            <p>Ethical Hacking and Offensive Security</p>
-                        </li>
-                        <li>
-                            <BsCheckLg className='service__list-icon' />
-                            <p>Incident Response</p>
+                            <p>API Penetration Testing</p>
                         </li>
                     </ul>
                 </article>
-                {/* End of ui/ux */}
-
-                {/* start Mô tả chi tiết */}
+                
                 <article className="service">
                     <div className="service__head">
-                        <h3>Achieve</h3>
+                        <h3><b>Programming / Scripting</b></h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Pre Security </b>Course Certificate on TryHackMe</p>
+                            <p>Python</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Networking Essentials</b> Course Certificate on Cisco</p>
+                            <p>SQL</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Web Design for Everybody</b> Course Certificate on Coursera</p>
+                            <p>Java</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Python for Everybody</b> Course Certificate on Coursera</p>
+                            <p>C</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Ethical Hacking for Beginners</b> Course Certificate on SimpliLearn</p>
+                            <p>C++</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Cybersecurity Foundations</b> Course Certificate on Linkedln</p>
+                            <p>MERN Stack</p>
                         </li>
                     </ul>
                 </article>
-                {/* End of ui/ux */}
-
-                {/* Mô tả chi tiết */}
+              
                 <article className="service">
                     <div className="service__head">
-                        <h3>Research Platform</h3>
+                        <h3><b>Tools</b></h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Windows 7, 8 and 10</p>
+                            <p>Burpsuite</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Windows Server 2012 r2 </p>
+                            <p>Nessus</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Kali Linux</p>
+                            <p>Nikto</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Ubuntu</p>
+                            <p>Metasploit</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>BackTrack</p>
+                            <p>WPScan</p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>Acunetix</p>
+                        </li><li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>Responder</p>
                         </li>
                     </ul>
                 </article>
-                {/* End of ui/ux */}
+                
 
             </div>
         </section>

@@ -19,9 +19,9 @@
 .about__me-image {
     border-radius: 2rem;
     overflow: hidden;
-    /** độ nghiên ảnh about*/
     transform: rotate(9deg);
     transition: var(--transition);
+    
 }
 
 .about__me-image:hover {
@@ -30,7 +30,7 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -50,13 +50,14 @@
 }
 
 .about__icon {
-    color: var(--color-primary);
+    color: white;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
     font-size: 0.95rem;
+    color: rgb(254, 254, 254)
 }
 
 .about__card small {

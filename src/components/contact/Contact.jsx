@@ -5,6 +5,7 @@ import { RiMessengerLine } from 'react-icons/ri'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import { RiInstagramLine } from 'react-icons/ri';
 
 const Contact = () => {
     const form = useRef();
@@ -25,7 +26,6 @@ const Contact = () => {
 
     return (
         <section id='contact'>
-            <h5>Get In Touch</h5>
             <h2>Contact Me</h2>
 
             <div className="container contact__container">
@@ -33,30 +33,30 @@ const Contact = () => {
                     <article className="contact__option">
                         <HiOutlineMail className='contact__option-icon' />
                         <h4>Email</h4>
-                        <h5>tanvunguyen2205@gmail.com</h5>
-                        <a href="mailto:tanvunguyen2205@gmail.com" target="_blank">Send a message</a>
+                        <h5>josangeorge27@gmail.com</h5>
+                        <a href="mailto:josangeorge27@gmail.com" target="_blank">Send a message</a>
                     </article>
 
                     <article className="contact__option">
-                        <RiMessengerLine className='contact__option-icon' />
-                        <h4>Messenger</h4>
-                        <h5>Nguyen Vu</h5>
-                        <a href="https://m.me/vunguyen260803.trying" target="_blank" >Send a message</a>
+                        <RiInstagramLine className='contact__option-icon' />
+                        <h4>Instagram</h4>
+                        <h5>josan.george</h5>
+                        <a href="https://www.instagram.com/josan.george/" target="_blank" >Send a message</a>
                     </article>
 
                     <article className="contact__option">
                         <TbBrandLinkedin className='contact__option-icon' />
                         <h4>Linkedin</h4>
-                        <h5>Nguyen Vu</h5>
-                        <a href="https://www.linkedin.com/in/nguyenvu2608/" target="_blank">Send a message</a>
+                        <h5>Josan George</h5>
+                        <a href="https://www.linkedin.com/in/josan-george-a86370227/" target="_blank">Send a message</a>
                     </article>
                 </div>
                 {/* End of contact options */}
 
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='Raymond Rhodes' required />
+                    <input type="text" name='name' placeholder='John' required />
                     <input type="email" name='email' placeholder='example@example.com' required />
-                    <textarea name='message' rows="7" placeholder='Hi Vu, I have a question...' required></textarea>
+                    <textarea name='message' rows="7" placeholder='Hi Josan, I have a question...' required></textarea>
                     <button type='submit' className='btn btn-primary'>Send Message</button>
                 </form>
             </div>

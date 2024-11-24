@@ -32,6 +32,29 @@
     margin-bottom: 1rem;
 }
 
+.summa {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary); /* Default text color */
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--color-primary); /* Default border color */
+    transition: var(--transition); /* Smooth transition effect */
+    background: transparent; /* Ensure the background is transparent by default */
+    
+}
+
+.summa:hover {
+    /* background: white; Keep background transparent even on hover */
+    color: black; /* Change text color to black on hover */
+    border-color: var(--color-black); 
+    background: transparent;
+    color: var(--color-black);
+    /* border-color: var(--color-bg);  */
+}
+
+
 /* ================== Media Queries (Medium Devices ==============*/
 @media screen and (max-width: 1024px) {
     .portfolio__container {

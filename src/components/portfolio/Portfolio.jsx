@@ -1,39 +1,28 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
+import IMG1 from '../../assets/blog1.webp'
+import IMG2 from '../../assets/blog2.webp'
+import IMG3 from '../../assets/blog3.webp'
+import { ImTextColor } from 'react-icons/im'
 
-//Do not use the images in production
 const data = [
     {
         id: 1,
         image: IMG1,
-        title: 'Personal Blog Website uses Jekyll (is a static site generator) and is hosted on Github.',
-        github: 'https://github.com/NguyenVu1310/NguyenVu1310.github.io',
-        demo: 'https://nguyenvu1310.github.io/',
+        title: 'H7CTF - WEB CHALLENGES WRITEUP',
+        link: 'https://medium.com/@josangeorge27/h7ctf-web-challenges-db1883775dfd',
     },
     {
         id: 2,
         image: IMG2,
-        title: 'My Personal Portfolio Website uses React and is deployed on Netlify.',
-        github: 'https://github.com/NguyenVu1310/netlify-personal-site',
-        demo: 'https://nguyenvu-personal-site.netlify.app/',
+        title: 'Unveiling the Power of AI in Cybersecurity: Building a Spam Detector',
+        link: 'https://medium.com/@josangeorge27/unveiling-the-power-of-ai-in-cybersecurity-building-a-spam-detector-cc6074b9c20c',
     },
     {
         id: 3,
         image: IMG3,
-        title: 'A Todo-List application simple developed based on React and deployed on Netlify.',
-        github: 'https://github.com/NguyenVu1310/todoList-react',
-        demo: 'https://nguyenvu-todo-list.netlify.app/',
-    },
-    {
-        id: 4,
-        image: IMG4,
-        title: 'A graduation project was done by my team. A website scans malicious content in URLs and blocks sites on blacklists.',
-        github: 'https://github.com/NguyenVu1310/threeblock',
-        demo: 'https://3block.systems/',
+        title: 'GlacierCTF 2024: Solving the “FindMe” Challenge (Miscellaneous)',
+        link: 'https://medium.com/@josangeorge27/glacierctf-2024-solving-the-findme-challenge-miscellaneous-cca55608caf4',
     },
 ]
 
@@ -41,12 +30,11 @@ const data = [
 const Portfolio = () => {
     return (
         <section id='portfolio'>
-            <h5>My Recent Projects</h5>
-            <h2>Portfolio</h2>
+            <h2><b>Recent Blogs</b></h2>
 
             <div className="container portfolio__container">
                 {
-                    data.map(({ id, image, title, github, demo }) => {
+                    data.map(({ id, image, title, link }) => {
                         return (
                             <article key={id} className='portfolio__item'>
                                 <div className="portfolio__item-image">
@@ -54,8 +42,7 @@ const Portfolio = () => {
                                 </div>
                                 <h3>{title}</h3>
                                 <div className="portfolio__item-cta">
-                                    <a href={github} className='btn' target='_blank'>Github</a>
-                                    <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                                    <a href={link} className='summa' target='_blank' style={{color:'white'}}>Medium</a>
                                 </div>
                             </article>
                         )

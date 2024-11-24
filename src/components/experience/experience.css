@@ -12,22 +12,28 @@
     transition: var(--transition);
 }
 
+
+
 .experience__container>div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
 
+.exp_sub{
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
 .experience__container>div h3 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--color-primary);
+    color: white;
 }
 
 .experience__content {
     display: grid;
-    /* Khoảng cách giữ 2 column skill */
-    grid-template-columns: 1fr 0.75fr;
+    /* grid-template-columns: 1fr 0.75fr; */
     row-gap: 1rem;
 }
 
